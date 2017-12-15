@@ -1,3 +1,6 @@
 __author__ = 'Bryan'
 
-print("Hello Python intepreter!")
+
+message = "Hello Python World"
+
+print(message)
