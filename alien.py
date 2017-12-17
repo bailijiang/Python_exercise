@@ -16,19 +16,31 @@ __author__ = 'Bryan'
 # alien_0['color'] = 'yellow'
 # print(alien_0['color'])
 
-alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-print("Original x-position: " + str(alien_0['x_position']))
+# alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+# print("Original x-position: " + str(alien_0['x_position']))
+#
+# if alien_0['speed'] == 'slow':
+#     x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#     x_increment = 2
+# else:
+#     x_increment = 3
+#
+# alien_0['x_position'] += x_increment
+# print("New x_position: " + str(alien_0['x_position']))
+#
+# print(alien_0)
+# del alien_0['speed']
+# print((alien_0))
 
-if alien_0['speed'] == 'slow':
-    x_increment = 1
-elif alien_0['speed'] == 'medium':
-    x_increment = 2
-else:
-    x_increment = 3
+aliens = []
+for alien in range(30):
+    aliens.append({'color': 'green', 'points': 5, 'speed': 'slow'})
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+        alien['speed'] = 'medium'
 
-alien_0['x_position'] += x_increment
-print("New x_position: " + str(alien_0['x_position']))
-
-print(alien_0)
-del alien_0['speed']
-print((alien_0))
+for alien in aliens:
+    print(alien)
