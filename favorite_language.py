@@ -1,4 +1,18 @@
 __author__ = 'Bryan'
+#coding=utf-8
+
+from collections import OrderedDict
+
+favorite_languages = OrderedDict()
+
+favorite_languages['Bryan'] = 'C/C++'
+favorite_languages['Heero'] = 'Python'
+favorite_languages['Blues'] = 'Java'
+favorite_languages['Bai'] = 'Golang'
+
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is: " + language.title() + ".")
+
 
 # favorite_languages = {
 #     'bob': 'Python',
@@ -38,14 +52,14 @@ __author__ = 'Bryan'
 # for language in set(favorite_languages.values()):
 #     print(language)
 
-favorite_languages = {
-    'jen': ['python', 'ruby'],
-    'sarah': ['c'],
-    'edward': ['ruby', 'go'],
-    'phil': ['python', 'haskell'],
-}
-
-for name, languages in favorite_languages.items():
-    print("\n" + name.title() + "'s favorite languages are: ")
-    for language in languages:
-        print("\t" + language)
+# favorite_languages = {
+#     'jen': ['python', 'ruby'],
+#     'sarah': ['c'],
+#     'edward': ['ruby', 'go'],
+#     'phil': ['python', 'haskell'],
+# }
+#
+# for name, languages in favorite_languages.items():
+#     print("\n" + name.title() + "'s favorite languages are: ")
+#     for language in languages:
+#         print("\t" + language)
