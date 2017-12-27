@@ -2,8 +2,7 @@
 __author__ = 'Bryan'
 #coding=utf8
 
-from django.urls import path, include, re_path
-from django.conf.urls import url
+from django.urls import re_path
 from . import views
 
 app_name = 'learning_logs'
