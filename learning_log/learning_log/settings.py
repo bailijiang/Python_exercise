@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning_logs',
     'users',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,13 @@ STATIC_URL = '/static/'
 
 # Bryan
 LOGIN_URL = '/users/login/'
+
+BOOTSTRAP3 = {
+    'include_jquery': True,
+
+    # The URL to the jQuery JavaScript file
+    'jquery_url': '//code.jquery.com/jquery.min.js',
+
+    # The Bootstrap base URL
+    'base_url': '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/',
+}
